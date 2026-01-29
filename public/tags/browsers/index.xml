@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Browsers on Found → Tried → ?</title>
+    <link>//localhost:1313/tags/browsers/</link>
+    <description>Recent content in Browsers on Found → Tried → ?</description>
+    <generator>Hugo -- 0.154.5</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 28 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/browsers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sync bookmarks across Brave, Firefox, Zen, and Edge</title>
+      <link>//localhost:1313/found/sync-bookmarks/</link>
+      <pubDate>Tue, 28 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/found/sync-bookmarks/</guid>
+      <description>Floccus and xBrowserSync are free, open-source extensions for syncing bookmarks across Brave, Firefox, Zen (a Firefox fork), and Edge.</description>
+    </item>
+  </channel>
+</rss>

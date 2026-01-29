@@ -1,0 +1,187 @@
+# baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Found → Tried → ?'
+
+## terminal, PaperMod
+theme = 'PaperMod'
+
+## terminal theme - Edited: 
+# notes-hugo\static\js
+# notes-hugo\static\terminal.css, 
+# notes-hugo\themes\terminal\layouts\partials\extended_head.html
+
+## PaperMod - Edited:
+# E:\1-TxtFiles_E\notes-hugo\themes\PaperMod\assets\css\extended\blank.css
+
+# Required for Chroma and the custom syntax highlighting.
+[markup.highlight]
+  noClasses = false
+  anchorLineNos = true
+  codeFences = true
+  guessSyntax = true
+  lineNos = false
+  style = 'monokai'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 10
+
+[[menu.main]]
+name = "about"
+url = "/about"
+weight = 11
+
+[[menu.main]]
+name = "Found"
+url = "/found/"
+weight = 20
+
+[[menu.main]]
+name = "Tried"
+url = "/tried/"
+weight = 30
+
+[[menu.main]]
+name = "??"
+url = "/dk/"
+weight = 40
+
+############ papermod 
+
+###### Home-Info Mode
+
+# [params.homeInfoParams]
+# Title = "Hi there wave"
+# Content = "Can be Info, links, about..."
+
+# [[params.socialIcons]]
+# name = "<platform>"
+# url = "<link>"
+
+# [[params.socialIcons]]
+# name = "<platform 2>"
+# url = "<link2>"
+
+###### Profile Mode
+
+[params.profileMode]
+enabled = true
+# title = "<Title>"          # optional, defaults to site title
+# subtitle = "This is subtitle"
+imageUrl = "images/frieren-pfps.jpg"  # optional
+imageTitle = "frieren-pfps" # optional
+imageWidth = 190           # custom size
+imageHeight = 190          # custom size
+
+[[params.profileMode.buttons]]
+name = "Tags"
+url = "/tags/"
+
+[[params.profileMode.buttons]]
+name = "Github"
+url = "https://github.com/avinash-027/"
+
+# optional
+# [[params.socialIcons]]
+# name = "<platform>"
+# url = "<link>"
+
+# [[params.socialIcons]]
+# name = "<platform 2>"
+# url = "<link2>"
+
+[outputs]
+home = ["HTML"] # necessary for search
+
+############# terminal  
+
+[params.Logo]
+logoText = "Found → Tried ?"              # Text to show in the logo
+# LogoHomeLink = "https://example.com"  # URL when clicking the logo
+
+[params]
+
+  ###### PaperMod
+
+  ShowBreadCrumbs = true
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowToc = true
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+
+  ###### terminal
+
+  # dir name of your main content (default is `content/posts`).
+  # the list of set content will show up on your index page (baseurl).
+  contentTypeName = "tried"
+
+  # if you set this to 0, only submenu trigger will be visible
+  showMenuItems = 7
+
+  # show selector to switch language
+  showLanguageSelector = false
+
+  # set theme to full screen width
+  fullWidthTheme = false
+
+  # center theme with default width
+  centerTheme = false
+
+  # if your resource directory contains an image called `cover.(jpg|png|webp)`,
+  # then the file will be used as a cover automatically.
+  # With this option you don't have to put the `cover` param in a front-matter.
+  autoCover = true
+
+  # set post to show the last updated
+  # If you use git, you can set `enableGitInfo` to `true` and then post will automatically get the last updated
+  showLastUpdated = false
+
+  # Provide a string as a prefix for the last update date. By default, it looks like this: 2020-xx-xx [Updated: 2020-xx-xx] :: Author
+  # updatedDatePrefix = "Updated"
+
+  # whether to show a page's estimated reading time
+  readingTime = true # default
+
+  # whether to show a table of contents
+  # can be overridden in a page's front-matter
+  # Toc = true # default
+
+  # set title for the table of contents
+  # can be overridden in a page's front-matter
+  # TocTitle = "Table of Contents" # default
+
+  # Set date/time format for posts
+  # This will impact the date/time displayed on
+  # index.html, the posts list page, and on posts themselves
+  # This value can also be configured per-post on front matter
+  # If you have any issues with the timezone rendering differently
+  # than you expected, please ensure your timezone is correctly set
+  # on your server.
+  # This value can be customized according to Hugo documentation:
+  # https://gohugo.io/functions/time/format/
+  # Default value (no changes needed):
+  # dateFormat = "2006-01-02"
+  # Example format, with date, time, and timezone abbreviation:
+  # dateFormat = "2006-01-02 3:04:06 PM MST"
+
+  subtitle = "A simple, retro theme for Hugo"
+  owner = ""
+  keywords = ""
+  copyright = ""
+  menuMore = "Show more"
+  readMore = "Read more"
+  readOtherPosts = "Read other posts"
+  newerPosts = "Newer posts"
+  olderPosts = "Older posts"
+  missingContentMessage = "Page not found..."
+  missingBackButtonLabel = "Back to home page"
+  minuteReadingTime = "min read"
+  words = "words"

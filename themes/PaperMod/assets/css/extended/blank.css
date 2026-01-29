@@ -1,0 +1,48 @@
+/*
+This is just a placeholder blank stylesheet so as to support adding custom styles budled with theme's default styles
+
+Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-css-with-themes-assets for more info
+*/
+/*
+:root[data-theme="dark"] {
+
+	--bg-color: #1a1b26;
+	--main-color: #7aa2f7;
+	--caret-color: #c0caf5;
+	--sub-color: #32333e;
+	--sub-alt-color: #24283b;
+	--text-color: #c0caf5;
+
+	--theme: var(--bg-color);
+	--primary: var(--text-color);
+	--secondary: var(--caret-color);
+	--tertiary: var(--sub-alt-color);
+	--content: var(--text-color);
+	--entry: var(--sub-alt-color);
+	--code-block-bg: var(--sub-alt-color);
+	--code-bg: var(--sub-alt-color);
+	--border: color-mix(in srgb, var(--sub-color) 20%, transparent);
+	color-scheme: dark;
+}
+*/
+
+main { max-width: calc(var(--main-width) + var(--gap) * 8) !important; }
+
+blockquote {
+	background: color-mix(in srgb, var(--secondary) 7%, transparent);
+}
+blockquote p {
+	padding: 5px;
+}
+
+summary {
+	cursor: pointer;
+}
+.post-content details {
+	padding: 6px 10px;
+	border: 2px solid color-mix(in srgb, var(--secondary) 10%, transparent);
+	border-radius: 5px;
+}
+
+tr { border : 1px solid var(--tertiary);}
+td { border-left: 1px solid var(--tertiary);}
