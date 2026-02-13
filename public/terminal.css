@@ -1,3 +1,6 @@
+.table-of-contents{
+  background: color-mix(in srgb, var(--accent) 3%, transparent);
+}
 .container {
   margin: auto;
   max-width: 900px;
@@ -47,4 +50,9 @@ details {
   color: var(--accent);
   padding: 6px 10px;
   border: 2px solid color-mix(in srgb, var(--accent, red) 10%, transparent);
+}
+
+table {
+  /* font-size: .8em;*/
+
 }

@@ -76,8 +76,8 @@ enabled = true
 # subtitle = "This is subtitle"
 imageUrl = "images/frieren-pfps.jpg"  # optional
 imageTitle = "frieren-pfps" # optional
-imageWidth = 190           # custom size
-imageHeight = 190          # custom size
+imageWidth = 170           # custom size
+imageHeight = 170          # custom size
 
 [[params.profileMode.buttons]]
 name = "Tags"

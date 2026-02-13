@@ -6,14 +6,47 @@
     <description>Recent content in Found on Found → Tried → ?</description>
     <generator>Hugo -- 0.154.5</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 29 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/found/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Key notes</title>
+      <link>//localhost:1313/found/untitled/</link>
+      <pubDate>Thu, 29 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/found/untitled/</guid>
+      <description>Android emulators, PC video player, Music Players, Build Apps, TUI...</description>
+    </item>
     <item>
       <title>Sync bookmarks across Brave, Firefox, Zen, and Edge</title>
       <link>//localhost:1313/found/sync-bookmarks/</link>
       <pubDate>Tue, 28 Jan 2025 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/found/sync-bookmarks/</guid>
       <description>Floccus and xBrowserSync are free, open-source extensions for syncing bookmarks across Brave, Firefox, Zen (a Firefox fork), and Edge.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/found/mihon-e/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/found/mihon-e/</guid>
+      <description>&lt;h3 id=&#34;steps&#34;&gt;Steps&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;java -version 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# confirms it&amp;#39;s JDK 17+&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;where java
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# add Path : PC → Properties → Advanced system settings → Environment Variables → System variables → New&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Variable name: JAVA_HOME&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Variable value: Enter the path = where java&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;gradle -v
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Instead of installing Gradle. Use the repo&amp;rsquo;s &lt;code&gt;./gradlew&lt;/code&gt; (or &lt;code&gt;gradlew.bat&lt;/code&gt; on Windows)—it&amp;rsquo;s self-contained and version-matched.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Clone (if not done): &lt;code&gt;git clone https://github.com/[yourusername]/mihon.git&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cd mihon&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Run&lt;/strong&gt;: &lt;code&gt;gradlew.bat assembleDebug&lt;/code&gt; (builds APK)
+&lt;ul&gt;
+&lt;li&gt;Gradle Wrapper is fetching the exact tools/dependencies Mihon needs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Install to device/emulator&lt;/strong&gt;: &lt;code&gt;gradlew.bat installDebug&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Expect initial Gradle download (few GB)—normal first run. If it fails due to Java path conflicts, prioritize JDK 17 in PATH:&lt;/p&gt;</description>
     </item>
     <item>
       <title>7zip</title>
@@ -30,13 +63,6 @@
       <description>ASCII text</description>
     </item>
     <item>
-      <title>Build Apps</title>
-      <link>//localhost:1313/found/build-apps/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/found/build-apps/</guid>
-      <description>ASCII text</description>
-    </item>
-    <item>
       <title>Company-PC-Site-Restrict</title>
       <link>//localhost:1313/found/company-pc-site-restrict/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -44,23 +70,11 @@
       <description>How Companies Restrict Access to Certain Websites</description>
     </item>
     <item>
-      <title>PC video player</title>
-      <link>//localhost:1313/found/pc-video-players/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/found/pc-video-players/</guid>
-      <description>&lt;h3 id=&#34;pc-video-player&#34;&gt;PC video player&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.videolan.org/vlc/index.html&#34;&gt;VLC media player&lt;/a&gt; (Windows, macOS, Linux, iOS, Android)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://mpv.io/&#34;&gt;MPV&lt;/a&gt; (Windows, macOS, Linux, Android)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://codecguide.com/download_kl.htm&#34;&gt;K-Lite Codec Pack&lt;/a&gt; (Windows)&lt;/li&gt;
-&lt;/ul&gt;</description>
-    </item>
-    <item>
       <title>SwiperJs</title>
       <link>//localhost:1313/found/swiperjs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/found/swiperjs/</guid>
-      <description>SwiperJs</description>
+      <description>free and most modern mobile touch slider</description>
     </item>
     <item>
       <title>yt-dlp</title>

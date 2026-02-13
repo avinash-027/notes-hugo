@@ -4,27 +4,25 @@ description: "Starship: to customize the terminal text view (does not work on CM
 tags:
   - tui
 ---
+- **Oh My Zsh** is a popular framework built on top of the Zsh shell that helps you manage plugins, themes, aliases, and configuration easily, making the terminal more powerful and convenient to use. 
+- **Powerlevel10k** is a fast, highly customizable Zsh-only theme—often used with Oh My Zsh—that displays useful information like Git status, exit codes, battery, and time, while staying extremely performant and visually polished. 
+	- [[Oh-My-Zsh/Powerlevel10k] Love my little shell setup : r/unixporn](https://www.reddit.com/r/unixporn/comments/xi4xf6/ohmyzshpowerlevel10k_love_my_little_shell_setup/)
+- **Starship**, on the other hand, is a cross-shell prompt written in Rust that works with Zsh, Bash, Fish, and more; it’s very fast, uses a single configuration file across shells, and replaces traditional Zsh themes instead of extending them. 
+> In short, Oh My Zsh is a framework, Powerlevel10k is a Zsh-specific theme, and Starship is a universal, shell-agnostic prompt.
+
 
 **[Starship](https://starship.rs/)** – A fast, customizable shell prompt written in Rust, often used in terminals like bash, zsh, fish, etc.
-
-> The minimal, blazing-fast, and infinitely customizable prompt for any shell!
+- The minimal, blazing-fast, and infinitely customizable prompt for any shell!
 
 **Links :**
-
 * [Christian Lempa Starship Config](https://github.com/ChristianLempa/dotfiles-win/blob/main/.starship/starship.toml)
 * [YouTube (Christian Lempa)](https://www.youtube.com/watch?v=AK2JE2YsKto)
 * [Hendrik’s Starship Config](https://github.com/hendrikmi/dotfiles/tree/main/starship)
 * [Henry’s YouTube](https://www.youtube.com/@henrymisc)
 * [The Ultimate Mac Terminal Setup - Beginner Tutorial](https://www.youtube.com/watch?v=d4bTkiftBOk)
 
-### Install Starship(In Windows)
-
-- [Starship Installation Guide](https://starship.rs/installing/)
-
-```powershell
-winget install starship
-```
-
+**Install Starship(In Windows)**
+- [Starship Installation Guide](https://starship.rs/installing/) `winget install starship`
 ### PowerShell Setup
 
 **Edit profile:**
