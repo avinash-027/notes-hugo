@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Browsers on Found → Tried → ?</title>
     <link>//localhost:1313/tags/browsers/</link>
     <description>Recent content in Browsers on Found → Tried → ?</description>
-    <generator>Hugo -- 0.154.5</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 28 Jan 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/tags/browsers/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,7 @@
       <link>//localhost:1313/found/sync-bookmarks/</link>
       <pubDate>Tue, 28 Jan 2025 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/found/sync-bookmarks/</guid>
-      <description>Floccus and xBrowserSync are free, open-source extensions for syncing bookmarks across Brave, Firefox, Zen (a Firefox fork), and Edge.</description>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Firefox Sync&lt;/strong&gt; offers richer tab/history syncing inside Firefox. Firefox Sync does work with some Firefox forks — but not all browsers.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Brave Sync&lt;/strong&gt; is ideal if you’re all-in on Brave: it’s end-to-end encrypted, account-less, and syncs bookmarks, tabs, history, and settings—but only within Brave.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Floccus&lt;/strong&gt; and &lt;strong&gt;xBrowserSync&lt;/strong&gt; win for cross-browser setups, with Floccus favoring self-hosting and xBrowserSync prioritizing anonymous simplicity.&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/dudor/BookmarkHub&#34;&gt;GitHub - dudor/BookmarkHub: BookmarkHub , sync bookmarks across different browsers&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/TCB13/LoFloccus&#34;&gt;GitHub - TCB13/LoFloccus: Sync Floccus&amp;rsquo; browser bookmarks to a local folder / any cloud.&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;Floccus excels in self-hosted flexibility via your own cloud storage, while xBrowserSync offers quick anonymous setup with public servers or self-hosting.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

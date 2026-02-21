@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mihon on Found → Tried → ?</title>
     <link>//localhost:1313/tags/mihon/</link>
     <description>Recent content in Mihon on Found → Tried → ?</description>
-    <generator>Hugo -- 0.154.5</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="//localhost:1313/tags/mihon/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -12,7 +12,7 @@
       <link>//localhost:1313/tried/mihon/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/tried/mihon/</guid>
-      <description>mihon guide</description>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://everythingmoe.com/post/mihonguide.html&#34;&gt;Mihon Quickstart Guide&lt;/a&gt; &lt;em&gt;EverythingMoe&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://wotaku.wiki/guides/ext/mihon&#34;&gt;Mihon, Aniyomi &amp;amp; Dantotsu Extension Repos&lt;/a&gt; &lt;em&gt;Wotaku.wiki&lt;/em&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

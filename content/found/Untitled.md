@@ -4,25 +4,29 @@ description: Android emulators, PC video player, Music Players, Build Apps, TUI.
 date: 2026-01-29
 Toc: true
 ---
+## Useful Links
+
+* [Learn Anything](https://learn-anything.xyz/) - collection of learning resources across various topics ^learn-anything
+* [Quick Reference](https://quickref.me/) - collection of cheat-sheets and quick references ^quickref
+* [Learn X in Y Minutes](https://learnxinyminutes.com/) - Programming Language Tours ^learnxinyminutes
+* [cheatography cheatsheets](https://cheatography.com/)
+
+- [Algorithms & Data Structures & Computer Science studies](https://github.com/imteekay/algorithms) ^github
+- [Free Programming Books – GoalKicker.com](https://goalkicker.com/)
+* [BairesDev AI Colors](https://www.bairesdev.com/tools/ai-colors) ^bairesdev
+* [ExtendsClass - Free Online Toolbox for developers](https://extendsclass.com/) ^extendsclass
+* [TechWithTim](https://www.youtube.com/@TechWithTim/playlists) ^youtube
+* [swerikcodes](https://linktr.ee/swerikcodes?utm_source=linktree_profile_share) ^linktr
+	* [5 Free Coding Courses Every Developer Needs](https://www.youtube.com/shorts/HS5laCuCGiA)
+
+* [Table conversion tool](https://tableconvert.com/) ^tableconvert
+* [Complete list of github markdown emoji markup](https://gist.github.com/rxaviers/7360908)  
+* [Giscus: A commenting system powered by GitHub Discussions.](https://giscus.app/) ^comments-tool
+- [GitHub - catppuccin/catppuccin: 😸 Soothing pastel theme for the high-spirited!](https://github.com/catppuccin/catppuccin) ^styles
 
 ### PWA
 
 - [What PWA Can Do Today](https://whatpwacando.today/)
-
-### Android emulators
-
-**BlueStacks and NoxPlayer** are the top Android emulators that run Android apps/games smoothly on both Windows and Mac.
-
-### PC video player
-
-- [VLC media player](https://www.videolan.org/vlc/index.html) (Windows, macOS, Linux, iOS, Android) 
-- [MPV](https://mpv.io/) (Windows, macOS, Linux, Android)
-- [K-Lite Codec Pack](https://codecguide.com/download_kl.htm) (Windows)
-
-### Music Players
-
-- [GitHub - OuterTune/OuterTune: A Material 3 Music Player for Android with local file & YouTube Music support. Forked from InnerTune](https://github.com/OuterTune/OuterTune)
-- [GitHub - ytmdesktop/ytmdesktop: A Desktop App for YouTube Music](https://github.com/ytmdesktop/ytmdesktop)
 
 ### Build Apps
 
@@ -63,19 +67,27 @@ Toc: true
 - **In-memory Storage :** Data stored in JavaScript variables during runtime. Extremely fast but completely volatile—everything is lost on refresh or app restart. Best for transient UI logic, derived state, or caching computed values within a single session.
 - **SQLite :** A full relational database engine embedded directly into mobile and desktop apps. Supports SQL queries, relations, indexing, and transactions. Ideal for complex, large-scale, offline-first applications. In Capacitor, it’s native on mobile and typically emulated on the web.
 - **sql.js _is_ SQLite, compiled for the browser**, but **without native disk access**
-### TUI
 
-- [Ghostty : cross-platform terminal emulator](https://ghostty.org/)
-- [WezTerm - Wez's Terminal Emulator](https://wezterm.org/)
-- [GitHub - rothgar/awesome-tuis: List of projects that provide terminal user interfaces](https://github.com/rothgar/awesome-tuis)
-- [Ratatui | Ratatui](https://ratatui.rs/)
 
-| Terminal  | Strengths                              | Platform        |
-| --------- | -------------------------------------- | --------------- |
-| Ghosty    | GPU acceleration, multiplexing         | Mac             |
-| Alacritty | Speed and simplicity                   | Cross-platform  |
-| Kitty     | Feature-rich, image support            | Cross-platform  |
-| WezTerm   | Integrated multiplexer, font rendering | Cross-platform  |
-| iTerm2    | Mac-specific, rich features            | Mac             |
-| ST        | Lightweight, efficient                 | Unix-like       |
-| Foot      | Lightweight, Wayland-native            | Linux (Wayland) |
+### Browser
+*[Almost full list of all desktop web browsers](https://nerdyslacker.github.io/desktop-web-browsers/#/)*
+
+- **Brave**: Chromium-based browser focused on privacy through built-in ad and tracker blocking, enabling faster loading and lower resource use.
+- **Chrome**: Google's dominant Chromium-based browser excels in speed, vast extension ecosystem, and seamless Google service integration.
+- **Chromium**: Open-source project serving as the foundation for Chrome and many browsers, prioritizing web standards and performance without proprietary features.
+- **Opera**: Chromium-powered browser offering a free VPN, built-in ad blocker, and sidebar for messengers, ideal for efficient multitasking.
+- **Tor**: Privacy-centric browser routing traffic through the Tor network to anonymize users and bypass censorship.
+- **Firefox**: Mozilla's Gecko-based browser emphasizing customization, open-source development, and strong privacy controls.
+- **Midori**: A Firefox derivative, known for being lightweight and privacy-focused. Midori is a free and open-source web browser known for its lightweight design and speed. It was originally developed using the WebKitGTK engine but has since transitioned to a version based on the Gecko engine, which is used by Firefox, and it emphasizes user privacy and security.
+- **Zen**: Firefox fork (Zen Browser) enhancing usability with vertical tabs, workspaces, and modern aesthetics for power users.
+- **Maxthon**: Dual-engine browser (Blink/Trident) known for cloud syncing, resource sniffer, and high customization across platforms.
+- **Microsoft Edge**: Chromium-based browser from Microsoft with efficient performance, vertical tabs, and deep Windows/Copilot integration.
+- **Safari**: Apple's WebKit-based browser optimized for macOS/iOS, prioritizing speed, battery life, and ecosystem privacy features.
+- **DuckDuckGo**: Privacy-focused browser blocking trackers by default, with a clean interface and built-in search protection.
+- **LibreWolf**: Firefox fork stripped of telemetry, auto-updates, and tracking for maximum privacy, deleting cookies/history on close.
+- **Pale Moon**: Firefox fork maintaining legacy extensions and a lightweight footprint for customized, efficient browsing.
+- **Floorp**: Highly customizable Firefox variant with unique UI tweaks like dual sidebars and Zen-style improvements.
+- Arc Browser
+- Vivaldi
+- **Falkon or Qutebrowser**: Ultra-lightweight options for minimal setups, though less feature-rich for Spaces.
+

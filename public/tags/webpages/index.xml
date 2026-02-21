@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Webpages on Found → Tried → ?</title>
     <link>//localhost:1313/tags/webpages/</link>
     <description>Recent content in Webpages on Found → Tried → ?</description>
-    <generator>Hugo -- 0.154.5</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="//localhost:1313/tags/webpages/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -12,7 +12,7 @@
       <link>//localhost:1313/found/swiperjs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/found/swiperjs/</guid>
-      <description>free and most modern mobile touch slider</description>
+      <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;Swiper&lt;/em&gt;&lt;/strong&gt; is the free and most modern mobile touch slider with hardware accelerated transitions and amazing native behaviour.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://swiperjs.com/&#34;&gt;SwiperJs&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;https://swiperjs.com/swiper-api&#34;&gt;Swiper API&lt;/a&gt;&lt;br&gt;&#xA;&lt;a href=&#34;https://swiperjs.com/demos&#34;&gt;SwiperJs Demos&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

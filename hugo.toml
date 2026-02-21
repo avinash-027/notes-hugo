@@ -2,8 +2,10 @@
 languageCode = 'en-us'
 title = 'Found → Tried → ?'
 
-## terminal, PaperMod
-theme = 'PaperMod'
+## terminal, papermod
+theme = 'terminal'
+
+# pagination.pagerSize = 4   # number of posts per page
 
 ## terminal theme - Edited: 
 # notes-hugo\static\js
@@ -33,9 +35,14 @@ url = "/"
 weight = 10
 
 [[menu.main]]
-name = "about"
+name = "About"
 url = "/about"
 weight = 11
+
+[[menu.main]]
+name = "Tags"
+url = "/tags/"
+weight = 12
 
 [[menu.main]]
 name = "Found"
@@ -74,23 +81,23 @@ weight = 40
 enabled = true
 # title = "<Title>"          # optional, defaults to site title
 # subtitle = "This is subtitle"
-imageUrl = "images/frieren-pfps.jpg"  # optional
-imageTitle = "frieren-pfps" # optional
-imageWidth = 170           # custom size
-imageHeight = 170          # custom size
+imageUrl = "images/frieren-pfps-3.jpg"
+# imageTitle = "frieren-pfps"
+imageWidth = 180           # custom size
+imageHeight = 180          # custom size
 
 [[params.profileMode.buttons]]
 name = "Tags"
 url = "/tags/"
 
 [[params.profileMode.buttons]]
-name = "Github"
-url = "https://github.com/avinash-027/"
+name = "Search"
+url = "/search/"
 
 # optional
-# [[params.socialIcons]]
-# name = "<platform>"
-# url = "<link>"
+[[params.socialIcons]]
+name = "Github"
+url = "https://github.com/avinash-027/"
 
 # [[params.socialIcons]]
 # name = "<platform 2>"
@@ -99,13 +106,30 @@ url = "https://github.com/avinash-027/"
 [outputs]
 home = ["HTML"] # necessary for search
 
+[params.assets]
+  favicon = "/favicon.ico"
+  favicon16x16 = "/favicon-16x16.png"
+  favicon32x32 = "/favicon-32x32.png"
+  apple_touch_icon = "/apple-touch-icon.png"
+  safari_pinned_tab = "/safari-pinned-tab.svg"
+
 ############# terminal  
 
 [params.Logo]
-logoText = "Found → Tried ?"              # Text to show in the logo
+logoText = "Found→ Tried→ ?"              # Text to show in the logo
 # LogoHomeLink = "https://example.com"  # URL when clicking the logo
 
-[params]
+[params.terminalProfile]
+  show = true
+  username = "A027"
+  imageUrl = "images/frieren-pfps-3.jpg"
+  message = "learning.. trying the found & interesting things.. "
+
+  [[params.terminalProfile.social]]
+    name = "GitHub"
+    url = "https://github.com/avinash-027/"
+
+[params]  
 
   ###### PaperMod
 

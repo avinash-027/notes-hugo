@@ -55,7 +55,7 @@ notepad $HOME\.config\starship\starship.toml
 
 [Click to Visit configuration presets for Starship](https://starship.rs/presets/)
 
-![starship-image](images/starship.png)
+![starship-image](/images/starship.png)
 
 From image
 - 1st is **Custom03**

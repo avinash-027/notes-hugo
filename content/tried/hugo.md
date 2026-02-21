@@ -1,6 +1,6 @@
 ---
 author: a027
-title: "Obsdian Wepages"
+title: Obsdian Wepages
 date: 2026-01-22
 description: Creating Hugo project directly from Obsidian vault contents
 tags:

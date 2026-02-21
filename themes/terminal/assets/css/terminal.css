@@ -1,2 +1,87 @@
 /* Placeholder file for your custom settings. */
 /* You can get the color scheme variables from https://panr.github.io/terminal-css/ */
+
+/* ------------------------------------------- */
+.table-of-contents{
+  background: color-mix(in srgb, var(--accent) 3%, transparent);
+}
+.container {
+  margin: auto;
+  max-width: 900px;
+  border-left: 1px solid color-mix(in srgb, var(--accent) 10%, transparent);
+}
+
+/* ------------------------------------------- */
+.content .post-content {
+  font-family: "Segoe UI", "Inter", "San Francisco", "Roboto"; 
+}
+
+.posts .post .post-content p{
+  margin: 5px 0 !important;
+}
+.post .post-title a {
+  display: block;
+}
+
+.post .post-title a:hover { background: color-mix(in srgb, var(--accent) 1%, transparent); }
+.post .post-title a:hover::after {
+  content: " ➡";
+}
+
+.post ul {
+  list-style: square;
+}
+.post ul li:not(:empty)::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  color: var(--accent);
+}
+
+.post .post-content { margin-top: 15px !important;}
+.post .post-tags { margin-bottom: 15px !important;}
+
+/* .post { background: color-mix(in srgb, var(--accent) 4%, transparent); background-clip: content-box;} */
+
+/* ------------------------------------------- */
+/* General scrollbar (vertical and horizontal) */
+::-webkit-scrollbar {
+  width: 7px;   /* vertical scrollbar width */
+  height: 7px;  /* horizontal scrollbar height */
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+/* Thumb */
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+}
+/* Thumb hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--foreground);
+}
+
+/* ------------------------------------------- */
+/* 
+h1, h2, h3, h4, h5 {
+  padding-bottom: 2px;
+  border-bottom: 2px solid color-mix(in srgb, var(--accent) 30%, transparent);
+}
+*/
+
+blockquote { background: color-mix(in srgb, var(--accent) 3%, transparent); }
+
+table {
+  /* font-size: .8em;*/
+}
+
+summary {
+  cursor: pointer;
+}
+details {
+  color: var(--accent);
+  padding: 6px 10px;
+  border: 2px solid color-mix(in srgb, var(--accent, red) 9%, transparent);
+}
+

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Websites on Found → Tried → ?</title>
     <link>//localhost:1313/tags/websites/</link>
     <description>Recent content in Websites on Found → Tried → ?</description>
-    <generator>Hugo -- 0.154.5</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 22 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/tags/websites/index.xml" rel="self" type="application/rss+xml" />
@@ -13,14 +13,14 @@
       <link>//localhost:1313/tried/hugo/</link>
       <pubDate>Thu, 22 Jan 2026 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/tried/hugo/</guid>
-      <description>Creating Hugo project directly from Obsidian vault contents</description>
+      <description>&lt;p&gt;&lt;strong&gt;About Hugo:&lt;/strong&gt; Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses short codes to add rich content. Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.&lt;/p&gt;&#xA;&lt;p&gt;Obsidian vaults with YAML frontmatter convert seamlessly to Hugo sites on &lt;em&gt;Windows&lt;/em&gt;, generating static web pages from Markdown notes. Native YAML support in Obsidian eliminates extra plugins, streamlining the workflow.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Company-PC-Site-Restrict</title>
       <link>//localhost:1313/found/company-pc-site-restrict/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/found/company-pc-site-restrict/</guid>
-      <description>How Companies Restrict Access to Certain Websites</description>
+      <description>&lt;h2 id=&#34;how-companies-restrict-access-to-certain-websites&#34;&gt;How Companies Restrict Access to Certain Websites&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Tor can bypass DNS filtering and forward proxies, but most modern corporate firewalls will detect and block Tor traffic — or flag it as suspicious. It’s not a reliable or risk-free workaround in monitored environments.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Tor is not invisible — the fact you&amp;rsquo;re using Tor can still be detected, even if the content is encrypted.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h3 id=&#34;1-forward-proxy-most-common&#34;&gt;1. &lt;strong&gt;Forward Proxy (Most Common)&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;p&gt;A &lt;strong&gt;forward proxy&lt;/strong&gt; sits between the user&amp;rsquo;s computer and the internet. It intercepts web traffic and can &lt;strong&gt;allow or deny&lt;/strong&gt; requests based on rules.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

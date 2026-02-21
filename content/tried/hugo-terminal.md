@@ -18,23 +18,52 @@ tags:
 2. can also add at `hugosite/assets/css/style.css`
 3. themes from [terminal-css](https://github.com/panr/terminal-css). can also add `terminal.css` file at `static/style.css`
 ```css
-:root {
-  --background: #0e1923;
-  --foreground: #d6e8ee;
-  --accent: #5accf0;
+/* Placeholder file for your custom settings. */
+/* You can get the color scheme variables from https://panr.github.io/terminal-css/ */
+
+/* ------------------------------------------- */
+.table-of-contents{
+  background: color-mix(in srgb, var(--accent) 3%, transparent);
 }
 .container {
   margin: auto;
   max-width: 900px;
   border-left: 1px solid color-mix(in srgb, var(--accent) 10%, transparent);
 }
+
+/* ------------------------------------------- */
+.content .post-content {
+  font-family: "Segoe UI", "Inter", "San Francisco", "Roboto"; 
+}
+
+.posts .post .post-content p{
+  margin: 5px 0 !important;
+}
 .post .post-title a {
   display: block;
 }
+
+.post .post-title a:hover { background: color-mix(in srgb, var(--accent) 1%, transparent); }
 .post .post-title a:hover::after {
   content: " ➡";
 }
 
+.post ul {
+  list-style: square;
+}
+.post ul li:not(:empty)::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  color: var(--accent);
+}
+
+.post .post-content { margin-top: 15px !important;}
+.post .post-tags { margin-bottom: 15px !important;}
+
+/* .post { background: color-mix(in srgb, var(--accent) 4%, transparent); background-clip: content-box;} */
+
+/* ------------------------------------------- */
 /* General scrollbar (vertical and horizontal) */
 ::-webkit-scrollbar {
   width: 7px;   /* vertical scrollbar width */
@@ -53,9 +82,18 @@ tags:
   background: var(--foreground);
 }
 
+/* ------------------------------------------- */
+/* 
 h1, h2, h3, h4, h5 {
   padding-bottom: 2px;
-  border-bottom: 1px solid var(--accent);
+  border-bottom: 2px solid color-mix(in srgb, var(--accent) 30%, transparent);
+}
+*/
+
+blockquote { background: color-mix(in srgb, var(--accent) 3%, transparent); }
+
+table {
+  /* font-size: .8em;*/
 }
 
 summary {
@@ -64,7 +102,7 @@ summary {
 details {
   color: var(--accent);
   padding: 6px 10px;
-  border: 1px solid var(--accent);
+  border: 2px solid color-mix(in srgb, var(--accent, red) 9%, transparent);
 }
 ```
 
@@ -122,11 +160,17 @@ In hugo.toml (or config.yaml / config.json).
   <summary>theme.js</summary>
 
 ```js
+const defaultTheme = "Viking";
+
 const presets = {
-  "Terminal Dark (default)": { "background": "#1a170f", "foreground": "#eceae5", "accent": "#eec35e" },
+  "Terminal Dark": { "background": "#1a170f", "foreground": "#eceae5", "accent": "#eec35e" },
   "Teal": { "background": "#1a170f", "foreground": "#eceae5", "accent": "#32858b" },
   "Matrix": { "background": "#000000", "foreground": "#4EEE85", "accent": "#4EEE85" },
   "Viking": { "background": "#0E1923", "foreground": "#D6E8EE", "accent": "#5ACCF0" },
+  "rosepine": { "background": "#191724", "foreground": "#e0def4", "accent": "#56949f" },
+  "catppuccin": { "background": "#181825", "foreground": "#cdd6f4", "accent": "#f5c2e7" },
+  "monokai": { "background": "#272822", "foreground": "#e2e2dc", "accent": "#a6e22e" },
+  "serika_dark": { "background": "#323437", "foreground": "#d1d0c5", "accent": "#e2b714" },
   "Pink Panther": { "background": "#1a170f", "foreground": "#eceae5", "accent": "#ee82cf" },
   "Black & White": { "background": "#000000", "foreground": "#ffffff", "accent": "#ffffff" },
   "Heliotrope": { "background": "#25062A", "foreground": "#F7E9F9", "accent": "#E575F8" },
@@ -138,19 +182,34 @@ const presets = {
   "Hopbush": { "background": "#FFF6F6", "foreground": "#462D2D", "accent": "#cc6099" },
   "Tahiti Gold": { "background": "#FFFBF7", "foreground": "#45372B", "accent": "#DF7020" },
   "Vanilla Sky": { "background": "#fff4f2", "foreground": "#424140", "accent": "#8f6a5e" },
-  "Tomato": { "background": "#fff7f1", "foreground": "#45372B", "accent": "#ff6347" },
+  "Tomato": { "background": "#fff7f1", "foreground": "#45372B", "accent": "#ff6347" }
 };
 
-// Apply previously saved theme if it exists
-const savedTheme = localStorage.getItem('selectedTheme');
-if (savedTheme && presets[savedTheme]) {
-  const theme = presets[savedTheme];
-  document.documentElement.style.setProperty('--background', theme.background);
-  document.documentElement.style.setProperty('--foreground', theme.foreground);
-  document.documentElement.style.setProperty('--accent', theme.accent);
-}
+// Apply previously saved theme if it exists, else default
+const applyTheme = (name) => {
+
+  const theme = presets[name];
+  if (!theme) return;
+
+  const root = document.documentElement;
+  root.style.setProperty('--background', theme.background);
+  root.style.setProperty('--foreground', theme.foreground);
+  root.style.setProperty('--accent', theme.accent);
+};
+
+// 🚀 PREVENT THEME BLINK ON REFRESH
+(function () {
+
+  const savedTheme = localStorage.getItem('selectedTheme') || defaultTheme;
+  applyTheme(savedTheme)
+
+})();
 
 document.addEventListener('DOMContentLoaded', () => {
+
+  let activeTheme = localStorage.getItem('selectedTheme') || defaultTheme;
+  applyTheme(activeTheme);
+
   const header = document.querySelector('header .header__inner');
 
   // 🎨 button
@@ -160,47 +219,86 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // modal
   let modal = document.createElement('div');
-  modal.id = "theme-dialog-Modal";
+  modal.id = "theme-dialog-modal";
 
   // create buttons from presets
-  let content = '<p>Select a theme:</p>';
+  let content = '<span style="display: block; padding: 10px 0 5px 0; margin-bottom:15px; text-align: center; border-bottom:1px solid var(--accent)">Select a theme</span>';
   for (let name in presets) {
     content += `
-    <button class="theme-btn" data-theme="${name}" 
-    style="border-top: 1px solid color-mix(in srgb,var(--accent) 25%,transparent); 
-    border-left: 1px solid var(--accent); border-right: 1px solid var(--accent); 
-    border-bottom: 3px solid var(--accent); border-radius: 4px; padding: 5px; margin: 5px">
-    ${name}</button>`;
+      <button class="theme-btn" data-theme="${name}">${name}</button>`;
   }
 
   modal.innerHTML = `
-    <div style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
-                background:var(--background); color:var(--foreground);
-                padding:20px; border:4px double var(--accent); border-radius:8px;
-                box-shadow:0 4px 10px rgba(0,0,0,0.3); max-width:90%; overflow:auto;">
+    <style>
+      .theme-btn{
+        padding: 4px; margin: 4px;
+        border-top: 1px solid color-mix(in srgb,var(--accent) 25%,transparent); 
+        border-left: 1px solid var(--accent); 
+        border-right: 1px solid var(--accent); 
+        border-bottom: 3px solid var(--accent); 
+        border-radius: 4px; 
+        font-size: 0.9em; 
+        transition: all 0.3s ease;
+      }
+      .modal-content-theme {
+        position:absolute; 
+        top:20%; 
+        width:50%;
+        max-width:90%; 
+        overflow:auto;
+        background:var(--background); color:var(--foreground);
+        padding:20px; 
+        border:4px double var(--accent); border-radius:8px;
+        box-shadow:0 4px 10px rgba(0,0,0,0.3); 
+      }
+      @media (max-width: 768px)
+      {
+        .modal-content-theme { top: 15%; width: 100%; padding:8px; margin:0; border:2px solid var(--accent); }
+        .theme-btn { padding: 3px; margin: 3px; }
+      }
+    </style>
+    <div class='modal-content-theme'>
       ${content}
       <br><br>
       <button id="closeModal" style="float: right; border-width: 2px; border-radius:8px;">Close</button>
     </div>
   `;
 
-  modal.style.cssText = "display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5);";
+  modal.style.cssText = "display:none; justify-content:center; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7);";
 
-  // show/hide modal
-  btn.onclick = () => modal.style.display = 'block';
+  // Show/hide modal
+  btn.onclick = () => modal.style.display = 'flex';
   modal.querySelector('#closeModal').onclick = () => modal.style.display = 'none';
   modal.addEventListener('click', e => { if(e.target===modal) modal.style.display='none'; });
 
-  // theme change logic
-  modal.querySelectorAll('.theme-btn').forEach(b => {
-    b.onclick = () => {
-      const theme = presets[b.dataset.theme];
-      document.documentElement.style.setProperty('--background', theme.background);
-      document.documentElement.style.setProperty('--foreground', theme.foreground);
-      document.documentElement.style.setProperty('--accent', theme.accent);
+  // Initialize buttons state
+  let modalBtns = modal.querySelectorAll('.theme-btn');
 
+  // Theme change logic
+  modalBtns.forEach(b => {
+
+    if (b.dataset.theme === activeTheme) {
+      b.setAttribute('aria-pressed', 'true');
+      b.style.background = 'var(--accent)';
+      b.style.color = 'var(--background)';
+    }
+
+    b.onclick = () => {
+      activeTheme = b.dataset.theme;
+
+      applyTheme(activeTheme);
       // Save the selected theme name in localStorage
       localStorage.setItem('selectedTheme', b.dataset.theme);
+
+      // Manage button active state
+      modalBtns.forEach(btn => {
+        btn.setAttribute('aria-pressed', 'false');
+        btn.style.background = '';
+        btn.style.color = '';
+      });
+      b.setAttribute('aria-pressed', 'true');
+      b.style.setProperty('background', 'var(--accent)');
+      b.style.setProperty('color', 'var(--background)');
     };
   });
 

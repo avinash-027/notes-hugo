@@ -2,11 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/found/</loc>
-    <lastmod>2026-01-29T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/</loc>
-    <lastmod>2026-01-29T00:00:00+00:00</lastmod>
+    <lastmod>2026-02-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/found/</loc>
+    <lastmod>2026-02-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/found/tools/</loc>
+    <lastmod>2026-02-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/found/untitled/</loc>
     <lastmod>2026-01-29T00:00:00+00:00</lastmod>
@@ -41,8 +44,6 @@
     <loc>//localhost:1313/found/sync-bookmarks/</loc>
     <lastmod>2025-01-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/found/mihon-e/</loc>
-  </url><url>
     <loc>//localhost:1313/dk/</loc>
   </url><url>
     <loc>//localhost:1313/found/7z/</loc>
@@ -55,6 +56,8 @@
   </url><url>
     <loc>//localhost:1313/found/company-pc-site-restrict/</loc>
   </url><url>
+    <loc>//localhost:1313/found/email-aliasing-services/</loc>
+  </url><url>
     <loc>//localhost:1313/tried/mihon/</loc>
   </url><url>
     <loc>//localhost:1313/tags/mihon/</loc>
@@ -62,6 +65,8 @@
     <loc>//localhost:1313/search/</loc>
   </url><url>
     <loc>//localhost:1313/tried/starship/</loc>
+  </url><url>
+    <loc>//localhost:1313/found/sublime/</loc>
   </url><url>
     <loc>//localhost:1313/found/swiperjs/</loc>
   </url><url>
