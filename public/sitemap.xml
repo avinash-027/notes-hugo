@@ -66,20 +66,16 @@
   </url><url>
     <loc>//localhost:1313/tried/starship/</loc>
   </url><url>
+    <loc>//localhost:1313/found/ssg/</loc>
+  </url><url>
     <loc>//localhost:1313/found/sublime/</loc>
   </url><url>
     <loc>//localhost:1313/found/swiperjs/</loc>
   </url><url>
     <loc>//localhost:1313/tags/tui/</loc>
   </url><url>
-    <loc>//localhost:1313/tags/videos/</loc>
-  </url><url>
     <loc>//localhost:1313/tags/webpages/</loc>
   </url><url>
     <loc>//localhost:1313/tried/wezterm/</loc>
-  </url><url>
-    <loc>//localhost:1313/tags/youtube/</loc>
-  </url><url>
-    <loc>//localhost:1313/found/yt-dlp/</loc>
   </url>
 </urlset>

@@ -13,7 +13,7 @@
 
 /* ------------------------------------------- */
 .content .post-content {
-  font-family: "Segoe UI", "Inter", "San Francisco", "Roboto"; 
+  font-family: "Inria Sans","IBM Plex Mono", "Segoe UI", Courier New, Courier, monospace, "Inter", "San Francisco", "Roboto"; 
 }
 
 .posts .post .post-content p{

@@ -58,24 +58,10 @@
       <description></description>
     </item>
     <item>
-      <title>Videos</title>
-      <link>//localhost:1313/tags/videos/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/videos/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Webpages</title>
       <link>//localhost:1313/tags/webpages/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/tags/webpages/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Youtube</title>
-      <link>//localhost:1313/tags/youtube/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/tags/youtube/</guid>
       <description></description>
     </item>
   </channel>

@@ -51,7 +51,7 @@
   <link rel="stylesheet" href="//localhost:1313/css/syntax.min.a0773cce9310cb6d8ed23e50f005448facf29a53001b57e038828daa466b25c0.css">
 
   
-  <link rel="stylesheet" href="//localhost:1313/css/terminal.min.cb367e8fabf1a623d746e5b08ce756e62fa3c002843ffe525802dbca9f42cd62.css">
+  <link rel="stylesheet" href="//localhost:1313/css/terminal.min.1ae5e2f234ae0b5a04c5665e35f4ecf9c0f7c817c772a4d27e906148dcc02580.css">
 
   
   <link rel="stylesheet" href="//localhost:1313/css/terms.min.b81791663c3790e738e571cdbf802312390d30e4b1d8dc9d814a5b5454d0ac11.css">
@@ -195,7 +195,7 @@
   <h1 class="post-title">
     <a href="//localhost:1313/found/email-aliasing-services/">email aliasing services</a>
   </h1>
-  <div class="post-meta"><span class="post-reading-time">1 min read (178 words)</span></div>
+  <div class="post-meta"><span class="post-reading-time">3 min read (524 words)</span></div>
 
   
   
@@ -206,72 +206,133 @@
   <div class="post-content"><div>
         <p>Third-party tools provide advanced email aliasing services that forward messages from unlimited or numerous aliases to your main email address, enhancing privacy and spam control beyond built-in provider tricks like Gmail&rsquo;s + addressing.</p>
 <ul>
-<li>
-<p><a href="https://www.reddit.com/r/privacy/comments/108wzvg/what_is_the_best_email_alias_service_option/">What is the best email alias service option? : r/privacy</a></p>
-</li>
-<li>
-<p><a href="https://www.reddit.com/r/Bitwarden/comments/1gqse8n/best_email_alias_service/">Best email alias service? : r/Bitwarden</a></p>
-</li>
-<li>
-<p><strong>DuckDuckGo Email Protection</strong>: Generates unlimited aliases; emails forward anonymously, and you can disable spammed ones via their app or site.</p>
-</li>
-<li>
-<p><strong>Addy.io (AnonAddy)</strong>: Free tier with unlimited standard aliases across shared domains; supports replies from aliases. <a href="https://addy.io/">addy</a></p>
-</li>
-<li>
-<p><strong>AliasGuard</strong>: Unlimited free aliases with a dashboard for management; includes browser extension and optional encryption. <a href="https://aliasguard.net/">aliasguard</a></p>
-</li>
-<li>
-<p><strong>AliasVault</strong>: Privacy-focused with built-in email server for aliases; end-to-end encrypted and self-hostable.</p>
-</li>
-<li>
-<p><strong>SimpleLogin</strong>: Free for 10 aliases, unlimited on paid ($30/year); open-source with browser extension and Proton Mail integration. <a href="https://simplelogin.io/">simplelogin</a></p>
-</li>
-<li>
-<p><strong>Firefox Relay</strong>: Free for 5 masks, unlimited for $12/year; focuses on easy generation and spam blocking.</p>
-</li>
+<li><a href="https://www.reddit.com/r/privacy/comments/108wzvg/what_is_the_best_email_alias_service_option/">What is the best email alias service option? : r/privacy</a></li>
+<li><a href="https://www.reddit.com/r/Bitwarden/comments/1gqse8n/best_email_alias_service/">Best email alias service? : r/Bitwarden</a></li>
+</ul>
+<p>Alias services do not create a separate login domain for each alias; instead, you keep your primary domain and generate aliases that forward to your main inbox.</p>
+<ul>
+<li><strong>DuckDuckGo Email Protection</strong>: Generates unlimited aliases; emails forward anonymously, and you can disable spammed ones via their app or site.</li>
+<li><strong>Addy.io (AnonAddy)</strong>: Free tier with unlimited standard aliases across shared domains; supports replies from aliases. <a href="https://addy.io/">addy</a></li>
+<li><strong>AliasGuard</strong>: Unlimited free aliases with a dashboard for management; includes browser extension and optional encryption. <a href="https://aliasguard.net/">aliasguard</a></li>
+<li><strong>AliasVault</strong>: Privacy-focused with built-in email server for aliases; end-to-end encrypted and self-hostable.</li>
+<li><strong>SimpleLogin</strong>: Free for 10 aliases, unlimited on paid ($30/year); open-source with browser extension and Proton Mail integration. <a href="https://simplelogin.io/">simplelogin</a></li>
+<li><strong>Firefox Relay</strong>: Free for 5 masks, unlimited for $12/year; focuses on easy generation and spam blocking. <a href="https://relay.firefox.com/">relay.firefox</a></li>
 </ul>
 <table>
   <thead>
       <tr>
-          <th>Tool</th>
-          <th>Free Aliases</th>
-          <th>Custom Domains</th>
-          <th>Replies from Alias</th>
-          <th>Encryption</th>
+          <th>Feature</th>
+          <th>Firefox Relay</th>
+          <th>SimpleLogin</th>
+          <th>DuckDuckGo Email Protection</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td>DuckDuckGo</td>
-          <td>Unlimited</td>
-          <td>No</td>
-          <td>Yes</td>
-          <td>Partial</td>
+          <td><strong>Alias Limit</strong></td>
+          <td>5 active masks ​</td>
+          <td>10 active aliases ​</td>
+          <td>Unlimited @duck.com aliases ​</td>
       </tr>
       <tr>
-          <td>Addy.io</td>
-          <td>Unlimited</td>
-          <td>Paid</td>
-          <td>Yes</td>
-          <td>No​</td>
+          <td><strong>Email Forwarding</strong></td>
+          <td>Unlimited incoming ​</td>
+          <td>Unlimited bandwidth ​</td>
+          <td>Unlimited with tracker stripping ​</td>
       </tr>
       <tr>
-          <td>SimpleLogin</td>
-          <td>10</td>
-          <td>Yes (paid)</td>
-          <td>Yes</td>
-          <td>Yes​</td>
+          <td><strong>Replies from Alias</strong></td>
+          <td>No ​</td>
+          <td>Yes ​</td>
+          <td>Yes (may leak forwarder) ​</td>
       </tr>
       <tr>
-          <td>AliasGuard</td>
-          <td>Unlimited</td>
-          <td>Yes (paid)</td>
-          <td>Yes</td>
-          <td>Optional​</td>
+          <td><strong>Attachments</strong></td>
+          <td>Up to 150 KB ​</td>
+          <td>Supported (standard limits) ​</td>
+          <td>Supported ​</td>
+      </tr>
+      <tr>
+          <td><strong>Browser Extensions</strong></td>
+          <td>Firefox only (generate/autofill) ​</td>
+          <td>Chrome/Firefox/Safari ​</td>
+          <td>Firefox/Chrome/Edge/Brave ​</td>
+      </tr>
+      <tr>
+          <td><strong>Mobile Apps</strong></td>
+          <td>Yes (dashboard) ​</td>
+          <td>iOS/Android ​</td>
+          <td>iOS/Android Privacy Browser ​</td>
+      </tr>
+      <tr>
+          <td><strong>Spam/Alias Control</strong></td>
+          <td>Disable via dashboard/app ​</td>
+          <td>Disable individual aliases ​</td>
+          <td>Instant deactivate via app/extension ​</td>
+      </tr>
+      <tr>
+          <td><strong>Organization Tools</strong></td>
+          <td>Labels (synced across devices) ​</td>
+          <td>Basic alias notes ​</td>
+          <td>None specified ​</td>
+      </tr>
+      <tr>
+          <td><strong>Privacy Extras</strong></td>
+          <td>Basic spam block ​</td>
+          <td>TOTP/WebAuthn 2FA ​</td>
+          <td>Tracker removal, HTTPS upgrades ​</td>
+      </tr>
+      <tr>
+          <td><strong>Integrations</strong></td>
+          <td>Firefox password manager ​</td>
+          <td>Proton Pass (unlimited logins/devices) ​</td>
+          <td>DuckDuckGo ecosystem ​</td>
+      </tr>
+      <tr>
+          <td><strong>Restrictions</strong></td>
+          <td>No custom domains/trackers/promo block ​</td>
+          <td>1 mailbox; no PGP/catch-all ​</td>
+          <td>No custom domains/advanced encryption ​</td>
       </tr>
   </tbody>
 </table>
+<ul>
+<li><a href="https://www.reddit.com/r/Simplelogin/comments/12fxizz/does_anyone_create_a_new_alias_for_every_signup/">Does anyone create a new alias for every signup? : r/Simplelogin</a></li>
+<li><a href="https://www.reddit.com/r/Simplelogin/comments/18nv5st/what_happens_if_i_sign_up_on_a_site_just_to/">What happens if I sign up on a site just to access what it has to offer and then immediately deactivate the alias? Will that stop the site from sending me emails, or will it just stop sending emails through the alias and make it start using my real address directly? : r/Simplelogin</a></li>
+<li><a href="https://www.reddit.com/r/privacy/comments/tsfx5y/when_using_a_site_to_create_email_aliases_can_a/">When using a site to create email aliases, can a website know if it’s an alias? : r/privacy</a></li>
+</ul>
+<h3 id="autofill--login-flow">Autofill → Login Flow<a href="#autofill--login-flow" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p><strong>Autofill only helps during sign-up</strong>—it inserts disposable aliases into registration forms (YouTube, Amazon, etc.) to protect your real email. Logins, bookmarks, and site accounts work normally afterward.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Step</th>
+          <th>What Happens</th>
+          <th>You Enter</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Signup</strong></td>
+          <td>Extension detects form → fills alias (e.g., <code>yt123@relay.firefox.com</code>)</td>
+          <td>Password only</td>
+      </tr>
+      <tr>
+          <td><strong>Login</strong></td>
+          <td>Site stores <strong>alias</strong> permanently → you log in with alias + password</td>
+          <td>Alias + password</td>
+      </tr>
+      <tr>
+          <td><strong>Real login example</strong>:</td>
+          <td></td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">YouTube login → yt123@relay.firefox.com + &#34;mypassword&#34; 
+</span></span><span class="line"><span class="cl">Amazon login → shop456@relay.firefox.com + &#34;amazonpass&#34; 
+</span></span><span class="line"><span class="cl">✓ Browser password manager saves each alias/password pair 
+</span></span></code></pre></div><p><strong>Key</strong>: Site account = <strong>alias forever</strong>. The autofill just prevents your <strong>real</strong> Gmail from appearing in signup forms. Site accounts use the <strong>alias</strong> permanently. Your real Gmail stays hidden entirely.</p>
 
       </div></div>
 

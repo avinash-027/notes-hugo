@@ -4,7 +4,6 @@ description: "How Companies Restrict Access to Certain Websites"
 tags:
   - websites
 ---
-
 ## How Companies Restrict Access to Certain Websites
 
 > Tor can bypass DNS filtering and forward proxies, but most modern corporate firewalls will detect and block Tor traffic — or flag it as suspicious. It’s not a reliable or risk-free workaround in monitored environments.
