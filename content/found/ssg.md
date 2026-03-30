@@ -23,3 +23,5 @@ title: "Static Site Generators: Info"
 - [Docusaurus: Build optimized websites quickly, focus on your content](https://docusaurus.io/)
 - [Modern Site Generator for Vue.js - Gridsome](https://gridsome.org/)
 - [Starlight 🌟 Build documentation sites with Astro](https://starlight.astro.build/)
+- [Sphinx — Sphinx documentation](https://www.sphinx-doc.org/en/master/)
+	- [Sphinx Themes Gallery](https://sphinx-themes.org/)

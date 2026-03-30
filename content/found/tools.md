@@ -4,7 +4,7 @@ description: Tools, Software and Applications for ...
 date: 2026-02-14
 Toc: true
 ---
-*Tools*
+### Tools
 - [DiskGenius: Data Recovery, Partition Manager, Backup & Disk Utilities](https://www.diskgenius.com/)
 - [Home | LibreOffice - Free and private office suite - Based on OpenOffice - Compatible with Microsoft](https://www.libreoffice.org/)
 - [Download Revo Uninstaller Freeware - Free and Full Download](https://www.revouninstaller.com/revo-uninstaller-free-download/)
@@ -29,7 +29,7 @@ Toc: true
 - [GitHub - OuterTune/OuterTune: A Material 3 Music Player for Android with local file & YouTube Music support. Forked from InnerTune](https://github.com/OuterTune/OuterTune)
 - [GitHub - ytmdesktop/ytmdesktop: A Desktop App for YouTube Music](https://github.com/ytmdesktop/ytmdesktop)
 
-### Window Manager
+### Window Manager - Tiling
 
 - [Using a tile-type window manager and sway running on Wayland](https://zenn.dev/haxibami/articles/wayland-sway-install)
 - [Best tiling window manager for windows coming from linux? : r/windows](https://www.reddit.com/r/windows/comments/1ibsmz6/comment/m9lbgo0/)
@@ -38,6 +38,8 @@ Toc: true
 - [i3 — i3: improved tiling X11 window manager](https://i3wm.org/)
 - [GitHub - glzr-io/glazewm: GlazeWM is a tiling window manager for Windows inspired by i3wm.](https://github.com/glzr-io/glazewm)
 - [GitHub - LGUG2Z/komorebi: A tiling window manager for Windows 🍉](https://github.com/LGUG2Z/komorebi)
+- https://learn.microsoft.com/en-us/windows/powertoys/fancyzones
+- https://github.com/fuhsjr00/bug.n
 ### TUI
 *[GitHub - rothgar/awesome-tuis: List of projects that provide terminal user interfaces](https://github.com/rothgar/awesome-tuis)*
 
